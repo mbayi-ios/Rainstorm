@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		89AF88862A17C0B500ACC91A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF88852A17C0B500ACC91A /* AppDelegate.swift */; };
 		89AF88882A17C0B500ACC91A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF88872A17C0B500ACC91A /* SceneDelegate.swift */; };
-		89AF888A2A17C0B500ACC91A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF88892A17C0B500ACC91A /* ViewController.swift */; };
+		89AF888A2A17C0B500ACC91A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF88892A17C0B500ACC91A /* RootViewController.swift */; };
 		89AF888D2A17C0B500ACC91A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AF888B2A17C0B500ACC91A /* Main.storyboard */; };
 		89AF888F2A17C0B600ACC91A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AF888E2A17C0B600ACC91A /* Assets.xcassets */; };
 		89AF88922A17C0B600ACC91A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89AF88902A17C0B600ACC91A /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		89AF88822A17C0B500ACC91A /* Rainstorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rainstorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AF88852A17C0B500ACC91A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89AF88872A17C0B500ACC91A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		89AF88892A17C0B500ACC91A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		89AF88892A17C0B500ACC91A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		89AF888C2A17C0B500ACC91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		89AF888E2A17C0B600ACC91A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AF88912A17C0B600ACC91A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,55 @@
 		89AF88842A17C0B500ACC91A /* Rainstorm */ = {
 			isa = PBXGroup;
 			children = (
+				89AF889E2A17C2C100ACC91A /* Supporting Files */,
+				89AF889D2A17C2B300ACC91A /* Resources */,
+				89AF889B2A17C29200ACC91A /* Storyboards */,
+				89AF88992A17C15200ACC91A /* View Controllers */,
 				89AF88852A17C0B500ACC91A /* AppDelegate.swift */,
 				89AF88872A17C0B500ACC91A /* SceneDelegate.swift */,
-				89AF88892A17C0B500ACC91A /* ViewController.swift */,
-				89AF888B2A17C0B500ACC91A /* Main.storyboard */,
-				89AF888E2A17C0B600ACC91A /* Assets.xcassets */,
-				89AF88902A17C0B600ACC91A /* LaunchScreen.storyboard */,
-				89AF88932A17C0B600ACC91A /* Info.plist */,
 			);
 			path = Rainstorm;
+			sourceTree = "<group>";
+		};
+		89AF88992A17C15200ACC91A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				89AF889A2A17C17300ACC91A /* Root View Controller */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		89AF889A2A17C17300ACC91A /* Root View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				89AF88892A17C0B500ACC91A /* RootViewController.swift */,
+			);
+			path = "Root View Controller";
+			sourceTree = "<group>";
+		};
+		89AF889B2A17C29200ACC91A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				89AF88902A17C0B600ACC91A /* LaunchScreen.storyboard */,
+				89AF888B2A17C0B500ACC91A /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		89AF889D2A17C2B300ACC91A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89AF888E2A17C0B600ACC91A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		89AF889E2A17C2C100ACC91A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89AF88932A17C0B600ACC91A /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89AF888A2A17C0B500ACC91A /* ViewController.swift in Sources */,
+				89AF888A2A17C0B500ACC91A /* RootViewController.swift in Sources */,
 				89AF88862A17C0B500ACC91A /* AppDelegate.swift in Sources */,
 				89AF88882A17C0B500ACC91A /* SceneDelegate.swift in Sources */,
 			);
